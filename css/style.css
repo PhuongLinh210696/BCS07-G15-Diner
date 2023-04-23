@@ -5,20 +5,30 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-
+/* Nav */
 .navbar-toggler{
     border: none;
 }
 .offcanvas.offcanvas-end{
     width: 100%;
 }
-
+form input{
+    position: relative;
+}
+form i{
+    position: absolute;
+    right: 195px;
+    top: 35px;
+    cursor: pointer;
+}
+/* Banner */
 .banner{
     height: 100vh;
     background-image:linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url("../img/banner1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    background-attachment: fixed;
 }
 
 .banner .banner__content{
@@ -48,4 +58,107 @@
 }
 .banner .banner__content button:hover i{
     color: #ff6600;
+}
+
+/* About */
+.about .about__content .about__left{
+    padding-right: 25px;
+}
+.about .about__content .about__left h6{
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Pacifico', cursive;
+    color: #ff6600;
+}
+
+.about .about__content .about__left h3{
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+.about .about__content .about__right p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #161C2D;
+}
+
+/* Book */
+.book .row{
+    --bs-gutter-x: 0;
+}
+
+.book .book__left{
+    height: 85vh;
+    background-image: url("../img/banner3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150%;
+    position: relative;
+}
+.book .book__left::before{
+    content: "";
+    background: rgb(16 15 19 / 46%);
+    z-index: 999;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.book .book__right{
+    height: 85vh;
+    background: #ff6600;
+}
+
+.book .book__right p{
+    color: #fff;
+}
+
+.book .book__right p:first-child{
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Pacifico', cursive;
+}
+
+.book .book__right h3{
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+.book .book__right .book__right__title{
+    padding: 40px 95px 40px 40px;
+}
+
+.book .book__right .book__right__deals{
+    padding-left: 40px;
+    padding-right: 95px;
+}
+
+.book .book__right .book__right__deals .title p{
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 40px;
+}
+
+.book .book__right .book__right__deals .title span{
+    font-size: 30px;
+    background-color: rgba(255, 255, 255 );
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    color: #ff6600;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.book .book__right .book__right__deals .title:hover span{
+    color: #fcb900;
 }
