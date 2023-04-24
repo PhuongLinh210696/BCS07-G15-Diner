@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* Nav */
@@ -11,6 +12,9 @@
 }
 .offcanvas.offcanvas-end{
     width: 100%;
+}
+.fixed-top{
+    position: absolute;
 }
 form input{
     position: relative;
@@ -88,13 +92,17 @@ form i{
     --bs-gutter-x: 0;
 }
 
-.book .book__left{
-    height: 85vh;
+.book .book__left img{
+    /* height: 85vh;
     background-image: url("../img/banner3.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 150%;
-    position: relative;
+    position: relative; */
+    width: 100%;
+    height: 507px;
+    background-size: cover;
+    background-position: center;
 }
 .book .book__left::before{
     content: "";
@@ -108,7 +116,6 @@ form i{
 }
 
 .book .book__right{
-    height: 85vh;
     background: #ff6600;
 }
 
@@ -161,4 +168,49 @@ form i{
 
 .book .book__right .book__right__deals .title:hover span{
     color: #fcb900;
+}
+
+/* Categories */
+.categories .cate__item{
+    background: #161C2D;
+}
+.categories .cate__item img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.categories .cate__title {
+    padding: 40px 0;
+    text-align: center;
+    
+}
+.categories .cate__title p{
+    font-size: 20px;
+    color: #ff6600;
+    font-family: 'Pacifico', cursive;
+}
+.categories .cate__title h3{
+    font-size: 38px;
+    font-weight: 600;
+}
+.categories .cate__item{
+    position: relative;
+}
+.categories .cate__item .cate__content{
+    padding: 20px 30px 40px 30px;
+    bottom: -20px;
+    left: 0;
+    position: absolute;
+}
+.categories .cate__item .cate__content a{
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+}
+
+.categories .cate__item .cate__content p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffc600;
 }
