@@ -52,28 +52,27 @@
               <i class="fa-regular fa-moon"></i>
             </div>
             <div class="nav">
-              <button type="button" id="trigger-overlay"><i class="fa-solid fa-bars"></i></button>
+                <i onclick="openNav()" class="fa-solid fa-bars"></i>
             </div>
-          </div>
-          <!-- When click on nav button -->
-          <div class="overlay overlay-scale">
-            <button type="button" class="overlay-close">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-            <nav class="header_container_nav">
-              <ul class="nav_menu">
-                <li>
-                  <a href="./index.html">Home</a>
-                  <a href="">About</a>
-                  <a href="./services.html">Services</a>
-                  <a href="">Blog posts</a>
-                  <a href="">404 page</a>
-                  <a href="">Elements</a>
-                  <a href="">Contact</a>
-                  <a href="">Landing page</a>
-                </li>
-              </ul>
-            </nav>
+            <!-- navigation page -->
+            <div id="myNav" class="overlay">
+              <button type="button" class="closebtn" onclick="closeNav()">
+                <i class="fa-solid fa-xmark " >
+                </i>
+              </button>
+              <nav class="overlay-content">
+                <ul>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="./services.html">Services</a></li>
+                  <li><a href="#">Blog Posts</a></li>
+                  <li><a href="#">404 page</a></li>
+                  <li><a href="#">Elements</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Landing page</a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
           <!-- /When click on nav button/  -->
         </div>
@@ -90,6 +89,7 @@
       </div>
     </div>
   </section>
+
   <main>
 
   </main>
@@ -107,7 +107,39 @@
 </body>
 
 </html>
-</head>
+
+
+
+
+
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <body>
   <header>
@@ -129,6 +161,5 @@
   </script>
 
 <script src="./js/service.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
-
-</html>
