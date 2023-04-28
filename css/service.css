@@ -107,15 +107,12 @@ header .service_banner .header_content .service_search .overlay .closebtn i {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-
 header .service_banner .header_content .service_search .overlay nav {
     text-align: center;
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    
 }
 header .service_banner .header_content .service_search .overlay nav ul {
     list-style: none;
@@ -124,14 +121,12 @@ header .service_banner .header_content .service_search .overlay nav ul {
     display: inline-block;
     height: 100%;
     position: relative;
-    
 }
 header .service_banner .header_content .service_search .overlay nav ul li {
     display: block;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     line-height: 3em;
-    
 }
 header .service_banner .header_content .service_search .overlay nav ul li a {
     font-size: 20px;
@@ -145,41 +140,6 @@ header .service_banner .header_content .service_search .overlay nav ul li a {
 header .service_banner .header_content .service_search .overlay nav ul li a:hover {
     color: #ff6600;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* header .service_banner .header_content  */
 header .service_banner .header_content .overlay-scale {
     visibility: hidden;
     opacity: 0;
@@ -188,9 +148,6 @@ header .service_banner .header_content .overlay-scale {
     -webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
     transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
 }
-
-/* header .service_banner .header_content */
-
 header .service_banner .header_content .overlay-scale.open{
     visibility: visible;
     opacity: 1;
@@ -199,7 +156,6 @@ header .service_banner .header_content .overlay-scale.open{
     -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
     transition: transform 0.4s, opacity 0.4s;
 }
-
 header .service_banner .header_content .overlay .overlay-close {
     width: 40px;
     height: 40px;
@@ -212,15 +168,6 @@ header .service_banner .header_content .overlay .overlay-close {
     color: white;
     border-radius: 6px;
 }
-
-
-
-
-
-
-
-
-
 
 
 /* banner background */
@@ -254,15 +201,127 @@ header .service_banner .header_content .overlay .overlay-close {
     text-decoration: none;
 }
 
+/* offer */
+.offer{
+    padding: 5rem;
+}
+.offer .offer_content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 0 2rem;
+}
+.offer .offer_content .content_left {
+    position: relative;
+    width: 40%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.offer .offer_content .content_right {
+    position: relative;
+    width: 60%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.offer .offer_content .content_left .title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ff6600;
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+.offer .offer_content .content_left .content {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+.offer .offer_content .content_right p:first-child {
+    font-size: 18px;
+    line-height: 28px;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.offer .offer_content .content_right p:last-child {
+    margin-top: 1rem;
+    font-size: 18px;
+    line-height: 28px;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+}
 
 
 
-
-
-
-
-
-
-
-
-
+/* menu */
+.menu {
+    position: relative;
+    padding: 3rem 0;
+}
+.menu .menu_content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+}
+.menu .menu_content .course {
+    padding: 5% 15%;
+    transition: all 0.5s ease 0s;
+    border-radius: 8px;
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+    background-color: white;
+    position: relative;
+    border: 1px solid #eee;
+    margin: 4% 5%;
+}
+.menu .menu_content .course:hover {
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
+}
+.menu .menu_content .course:hover .course_header .course_icon  {
+    background-color: #ff6600;
+    transition: 0.3s ease-in-out;
+}
+.menu .menu_content .course:hover .course_header .course_icon i {
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.menu .menu_content .course .course_header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 30px;
+    align-items: center;
+    margin: 4% 0;
+}
+.menu .menu_content .course .course_header .course_icon {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background: rgb(130 115 252 / 5%);
+    line-height: 70px;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+.menu .menu_content .course .course_header .course_icon i {
+    color: #ff6600;
+    font-size: 25px;
+    line-height: 70px;
+}
+.menu .menu_content .course .course_header .course_title p {
+    margin: 0;
+}
+.menu .menu_content .course .course_header .course_title h4 a {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+.menu .menu_content .course .course_header .course_content {
+    margin-right: 15%;
+}
