@@ -194,9 +194,6 @@ header .service_banner .header_content .overlay .overlay-close {
 }
 
 /* offer */
-.offer{
-    padding: 5rem;
-}
 .offer .offer_content {
     display: flex;
     flex-wrap: wrap;
@@ -433,26 +430,37 @@ header .service_banner .header_content .overlay .overlay-close {
     margin-right: -15px;
     margin-left: -15px;
 }
-.plans .plans_content .plans_item .plans_item_content {
+.plans_menu {
+    position: relative;
+    width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (max-width: 992px) {
+    .plans_menu {
+        width:100%;
+    }
+}
+.plans .plans_content .plans_menu .plans_item .plans_item_content {
     padding-bottom: 10px;
     border-bottom: 2px dotted #bbb;
     margin: 0 8%;
     display: flex;
     flex-wrap: wrap;
 }
-.plans .plans_content .plans_item .plans_item_content .plans_item_title h6 {
+.plans .plans_content .plans_menu .plans_menu .plans_item .plans_item_content .plans_item_title h6 {
     font-size: 20px;
     font-weight: 600;
 }
-.plans .plans_content .plans_item .plans_item_content .plans_item_price {
+.plans .plans_content .plans_menu .plans_item .plans_item_content .plans_item_price {
     text-align: right !important;
 }
-.plans .plans_content .plans_item .plans_item_content .plans_item_price h6 {
+.plans .plans_content .plans_menu .plans_item .plans_item_content .plans_item_price h6 {
     font-weight: 600;
     font-size: 1.3em;
     color: #ff6600;
 }
-.plans .plans_content .plans_item .plans_item_infor p {
+.plans .plans_content .plans_menu .plans_item .plans_item_infor p {
     margin: 0 8%;
     margin-top: 10px;
     font-size: 18px;
