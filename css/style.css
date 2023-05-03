@@ -2,8 +2,215 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
 }
 
+/* Nav */
+.navbar-toggler{
+    border: none;
+}
 .offcanvas.offcanvas-end{
     width: 100%;
+}
+.fixed-top{
+    position: absolute;
+}
+form input{
+    position: relative;
+}
+form i{
+    position: absolute;
+    right: 195px;
+    top: 35px;
+    cursor: pointer;
+}
+/* Banner */
+.banner{
+    height: 100vh;
+    background-image:linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url("../img/banner1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.banner .banner__content{
+    max-width: 600px;
+    padding-top: 10rem;
+}
+
+.banner .banner__content h2{
+    font-size: 3rem;
+}
+.banner .banner__content p{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.banner .banner__content button{
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    background: none;
+    text-align: center;
+    color: white;
+    transition: all 0.5s;
+}
+.banner .banner__content button:hover{
+    color: #ff6600;
+    background: white;
+}
+.banner .banner__content button:hover i{
+    color: #ff6600;
+}
+
+/* About */
+.about .about__content .about__left{
+    padding-right: 25px;
+}
+.about .about__content .about__left h6{
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Pacifico', cursive;
+    color: #ff6600;
+}
+
+.about .about__content .about__left h3{
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+.about .about__content .about__right p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #161C2D;
+}
+
+/* Book */
+.book .row{
+    --bs-gutter-x: 0;
+}
+
+.book .book__left img{
+    /* height: 85vh;
+    background-image: url("../img/banner3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150%;
+    position: relative; */
+    width: 100%;
+    height: 507px;
+    background-size: cover;
+    background-position: center;
+}
+.book .book__left::before{
+    content: "";
+    background: rgb(16 15 19 / 46%);
+    z-index: 999;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.book .book__right{
+    background: #ff6600;
+}
+
+.book .book__right p{
+    color: #fff;
+}
+
+.book .book__right p:first-child{
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Pacifico', cursive;
+}
+
+.book .book__right h3{
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+.book .book__right .book__right__title{
+    padding: 40px 95px 40px 40px;
+}
+
+.book .book__right .book__right__deals{
+    padding-left: 40px;
+    padding-right: 95px;
+}
+
+.book .book__right .book__right__deals .title p{
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 40px;
+}
+
+.book .book__right .book__right__deals .title span{
+    font-size: 30px;
+    background-color: rgba(255, 255, 255 );
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    color: #ff6600;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.book .book__right .book__right__deals .title:hover span{
+    color: #fcb900;
+}
+
+/* Categories */
+.categories .cate__item{
+    background: #161C2D;
+}
+.categories .cate__item img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.categories .cate__title {
+    padding: 40px 0;
+    text-align: center;
+    
+}
+.categories .cate__title p{
+    font-size: 20px;
+    color: #ff6600;
+    font-family: 'Pacifico', cursive;
+}
+.categories .cate__title h3{
+    font-size: 38px;
+    font-weight: 600;
+}
+.categories .cate__item{
+    position: relative;
+}
+.categories .cate__item .cate__content{
+    padding: 20px 30px 40px 30px;
+    bottom: -20px;
+    left: 0;
+    position: absolute;
+}
+.categories .cate__item .cate__content a{
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+}
+
+.categories .cate__item .cate__content p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffc600;
 }
