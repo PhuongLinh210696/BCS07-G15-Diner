@@ -65,23 +65,23 @@ form i{
 }
 
 /* About */
-.about .about__content .about__left{
+.about .about__left{
     padding-right: 25px;
 }
-.about .about__content .about__left h6{
+.about .about__left h6{
     font-size: 20px;
     line-height: 30px;
     font-family: 'Pacifico', cursive;
     color: #ff6600;
 }
 
-.about .about__content .about__left h3{
+.about .about__left h3{
     font-size: 38px;
     line-height: 48px;
     font-weight: 600;
 }
 
-.about .about__content .about__right p{
+.about .about__right p{
     font-size: 18px;
     line-height: 28px;
     color: #161C2D;
@@ -243,29 +243,24 @@ form i{
 }
 
 /* Delicious */
-.delicious .card{
-    border: inherit;
-    border-radius: inherit;
-}
-
-.delicious .card .delicious__img{
+.delicious{
     background-image: url("../img/banner2.jpg");
     background-size: cover;
     height: 450px;
     background-position: center;
 }
+.delicious .card{
+    border: inherit;
+    border-radius: inherit;
+}
+
 
 .delicious .container .card-title{
     font-size: 45px;
     line-height: 55px;
     font-weight: 600;
 }
-.delicious .container .ps-5{
-    padding-left: 15rem!important;
-}
-.delicious .container .pe-5{
-    padding-right: 15rem!important;
-}
+
 
 .btn-left{
     padding-left: 3rem;
@@ -276,7 +271,6 @@ form i{
 
 
 .delicious a:first-child:hover{
-    background-color: #F7F7F7;
     text-decoration: underline;
     color: #ff6600;
 }
@@ -322,7 +316,7 @@ form i{
     color: #fff;
 }
 .number .card:hover{
-    transform: translate(0,-2rem);
+    transform: translate(0,-0.5rem);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     transition: all 0.5s;
 }
@@ -357,3 +351,169 @@ form i{
 .posts .card-footer{
     border-top: none;
 }
+
+.posts .footer__left{
+    z-index: 1;
+}
+.posts .footer__right{
+    z-index: 1;
+}
+.posts .footer__right:hover a{
+    z-index: 1;
+    color: #ff6600;
+}
+.posts .card .card-img-overlay{
+    top: 400px;
+}
+.posts .card .card-img-overlay a{
+    color: #ff6600;
+}
+.testimonials .testimonials__title{
+    padding: 40px 0;
+    text-align: center;
+    
+}
+.testimonials .testimonials__title p{
+    font-size: 20px;
+    color: #ff6600;
+    font-family: 'Pacifico', cursive;
+}
+.testimonials .testimonials__title h3{
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.testimonials__slick img{
+    width: 75px;
+}
+
+.testimonials__slick span{
+    color: #ff6600;
+    font-size: 22px;
+}
+
+blockquote{
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.testimonials__slick p{
+    padding-left: 10rem!important;
+    padding-right: 10rem!important;
+}
+
+.slick-dots li button:before{
+    font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before{
+    color: #ff6600;
+}
+
+/* Footer */
+footer{
+    background: #000000;
+}
+
+.footer__main .row .col ul{
+    list-style: none;
+    padding-left: initial;
+}
+.footer__main .row .col ul li a{
+    color: #a5a2a1;
+}
+
+.footer__main .row .col-4 p{
+    
+    color: #a5a2a1;
+}
+
+.footer__icon{
+    font-size: 15px;
+    background-color: rgba(255, 255, 255 );
+    width: 30px;
+    height: 30px;
+    color: #ff6600;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.footer__main .row .col ul li a:hover{
+    color: #ff6600;
+}
+
+.footer__main p{
+    color: #F7F7F7;
+}
+.btn-primary{
+    background-color: #ff6600;
+    border: none;
+}
+
+.border-danger{
+    border-color: #a5a2a1!important;
+}
+.footer__copyright p{
+    color: #F7F7F7;
+}
+
+.footer__copyright a{
+    color: #ff6600;
+}
+
+.offcanvas{
+    background: #000000;
+    opacity: 0.8;
+}
+.offcanvas-body{
+    font-size: 20px;
+    line-height: 48px;
+}
+.offcanvas-body ul li a{
+    font-weight: 600;
+}
+.btn-close{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    overflow: hidden;
+    border: none;
+    background: #ff6600;
+    color: #fff;
+    border-radius: 10px;
+}
+
+@media(max-width:576px)  {
+    .nav__right form i{
+        right: 70px;
+        top: 27px;
+    }
+    .banner .banner__content p{
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .banner .banner__content button{
+        width: 200px;
+        padding: 15px;
+        border-radius: 10px;
+        background: none;
+        text-align: center;
+        color: white;
+        transition: all 0.5s;
+    }
+
+    .testimonials__slick p{
+        padding-left: 2rem!important;
+        padding-right: 2rem!important;
+    }
+
+    .posts .card .card-img-overlay{
+        top: 550px;
+    }
+}
+
