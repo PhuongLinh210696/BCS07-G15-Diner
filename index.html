@@ -59,41 +59,71 @@
           <a class="navbar-brand fs-1 fw-bold text-white" href="#">Diner</a>
           <div class="nav__right d-flex">
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search here" aria-label="Search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </form>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars text-white fs-2"></i>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search here"
+                aria-label="Search"
+              />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars text-white fs-2"></i>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header ">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close fa-solid fa-xmark"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
               </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav align-items-center flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light fw-bold" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light " href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="./service.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Blog Post</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="./404.html">404 page</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Elements</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="./contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Landing page</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -424,7 +454,7 @@
         <div class="container">
               <div class="row">
                 <div class="col-6 col-sm-3 mb-3 mb-sm-6">
-                  <div class="card">
+                  <div class="card z-0">
                     <div class="card-body">
                       <div class="number__icon align-self-center text-center mt-4 mb-4">
                         <span class="fa-solid fa-building text-center"></span>
@@ -470,13 +500,35 @@
               </div>
           </div>
         </div>
+      </section>
+      <section class="video">
+        <div class="container">
+          <div class="video__img position-relative mb-5">
+<!-- Button trigger modal -->
+<a id="play-video" class="video-play-button" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  <span></span>
+</a>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
         <div class="container text-center mt-5">
-          <div class="embed-responsive embed-responsive-16by9">
+          <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal" aria-label="Close">X</button>
+          <div class="embed-responsive">
             <iframe title="vimeo-player" src="https://player.vimeo.com/video/305185528?h=195bf3cba0" width="640" height="360" frameborder="0"    allowfullscreen poster></iframe>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</div>
 
+          </div>
+        
+
+        </div>
+      </section>
       <section class="posts pt-5 pb-5">
         <div class="container">
           <div class="posts__title">
@@ -629,6 +681,31 @@
           </div>
         </div>
       </section>
+
+      <!-- slide bar -->
+  <section class="right-sidebar">
+    <div class="pull_right toggle-right-sidebar">
+      <span><i class="fa-solid fa-angles-right"></i></span>
+    </div>
+    <div class="bar_buttons">
+      <div class="button_content">
+        <a href="">
+            <span><i class="fa-solid fa-arrow-left"></i></span>
+          <span>Back</span>
+        </a>
+        <a href="">
+            <span><i class="fa-solid fa-download"></i></span>
+          <span>Download</span>
+        </a>
+        <a href="">
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+          <span>Buy</span>
+        </a>
+      </div>
+    </div>
+    <div class="right-sidebar-panel-content animated fadeInRight" tabindex="5003" style="overflow: hidden; outline: none;">
+    </div>
+</section>
     </main>
     <footer>
       <!-- place footer here -->
@@ -677,6 +754,8 @@
         </div>
       </div>
     </footer>
+    <!-- Back to top -->
+    <a href="#" class="cd-top text-replace js-cd-top"><i class="fa-solid fa-angle-up"></i></a>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -708,6 +787,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- Back to top -->
+    <script src="./js/backtotop/util.js"></script>
+    <script src="./js/backtotop/main.js"></script>
     <script>
         $(document).ready(function () {
         $(".testimonials__slick").slick({

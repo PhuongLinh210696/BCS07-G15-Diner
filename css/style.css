@@ -248,6 +248,18 @@ form i{
     background-size: cover;
     height: 450px;
     background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.delicious::before{
+    content: "";
+    background: rgb(16 15 19 / 66%);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }
 .delicious .card{
     border: inherit;
@@ -314,6 +326,9 @@ form i{
     line-height: 68px;
     background-color: #ff6600;
     color: #fff;
+}
+.number .card{
+    z-index: 1;
 }
 .number .card:hover{
     transform: translate(0,-0.5rem);
@@ -475,6 +490,9 @@ footer{
 .offcanvas-body ul li a{
     font-weight: 600;
 }
+.offcanvas-body ul li:hover a{
+    color: #ff6600!important;
+}
 .btn-close{
     width: 40px;
     height: 40px;
@@ -487,7 +505,254 @@ footer{
     color: #fff;
     border-radius: 10px;
 }
+/* right side bar */
+.pull_right {
+    float: right;
+    position: fixed;
+    right: 0px;
+    top: 150px;
+    width: 90px;
+    z-index: 99999;
+    text-align: center;
+}
+.toggle-right-sidebar span i{
+    background: #0D1326;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #e6ebff;
+    border-radius: 50px;
+    font-size: 26px;
+    cursor: pointer;
+    opacity: .5;
+}
+.right-sidebar {
+    width: 90px;
+    position: fixed;
+    z-index: 1000;
+    right: 0px;
+    top: 0;
+    margin-top: 140px;
+    transition: all .5s ease-in-out;
+    overflow-y: auto;
+}
+.right-sidebar .bar_buttons {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    padding: 40px 5px 10px;
+    padding-top: 70px;
+    background: #0D1326;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+.right-sidebar .bar_buttons .button_content {
+    border-top: 1px solid #41414d;
+    padding-top: 30px;
+}
+.right-sidebar .bar_buttons a {
+    display: block;
+    color: #e6ebff;
+    text-decoration: none;
+    line-height: 24px;
+    opacity: .6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.right-sidebar .bar_buttons span i {
+    display: block;
+}
+.right-sidebar .bar_buttons span i{
+    position: static;
+    color: #e6ebff;
+}
+.right-sidebar .bar_buttons .button_content a:hover {
+    opacity: 1;
+    transition: 0.5s all;
+}
 
+/* Back to top */
+.cd-top {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 100%;
+    text-align: center;
+    background: #ff6600;
+    font-weight: bold;
+    color: #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+  }
+  
+  .js .cd-top {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s, background-color 0.3s;
+  }
+  
+  .js .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .js .cd-top--fade-out {
+    opacity: 0.5;
+  }
+  
+  .js .cd-top:hover {
+    background-color: var(--cd-color-3);
+    opacity: 1;
+  }
+
+  
+
+.js .cd-top {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visibility .3s, background-color .3s
+}
+
+.js .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1
+}
+
+.js .cd-top--fade-out {
+    opacity: .5
+}
+
+.js .cd-top:hover {
+    background-color: hsl(5, 76%, 62%);
+    background-color: var(--cd-color-3);
+    opacity: 1
+}
+
+  a:hover{
+    color: #fff;
+  }
+
+
+
+  /* Modal Video */
+  .modal{
+    background:rgb(19 19 19 / 95%);
+  }
+  .modal-content{
+    background-color:initial;
+    border: none;
+  }
+  .btn-close-modal{
+    font-size: 20px;
+    color: #fff;
+    padding-left: 620px;
+  }
+  .btn-close-modal:hover{
+    color: #fff;
+  }
+  .video .video__img{
+    background: url("../img/banner3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    min-height: 500px;
+  }
+  .video .video__img::before{
+    content: "";
+    background: rgb(16 15 19 / 66%);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+  }
+  .video-play-button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: content-box;
+    display: block;
+    width: 32px;
+    height: 44px;
+    /* background: #fa183d; */
+    border-radius: 50%;
+    padding: 18px 20px 18px 28px;
+  }
+  
+  .video-play-button:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #ff6600;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+  }
+  
+  .video-play-button:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+    transition: all 200ms;
+  }
+  
+  .video-play-button:hover:after {
+    background-color: darken(#ff6600, 10%);
+  }
+  
+  .video-play-button img {
+    position: relative;
+    z-index: 3;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+  
+  .video-play-button span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 32px solid #ff6600;
+      border-top: 22px solid transparent;
+      border-bottom: 22px solid transparent;
+  }
+  
+  @keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+      opacity: 0;
+    }
+  }
+@media(max-width:480px){
+    .posts .card .card-img-overlay{
+        top: 550px;
+    }
+}
 @media(max-width:576px)  {
     .nav__right form i{
         right: 70px;
@@ -517,3 +782,14 @@ footer{
     }
 }
 
+@media(max-width:1024px){
+    form i{
+        right: 105px;
+    }
+    .book .book__left img{
+        height: 579px;
+    }
+    .posts .card .card-img-overlay{
+        top: 330px;
+    }
+}
